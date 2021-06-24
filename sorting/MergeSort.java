@@ -1,5 +1,6 @@
 package sorting;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MergeSort {
@@ -14,6 +15,8 @@ public class MergeSort {
     }
 
     private static int[] mergeSort(int[] array, int start, int end) {
+        ArrayList list = new ArrayList();
+        
         if (start < end) {
             int mid = (start + end) / 2;
             mergeSort(array, start, mid);
